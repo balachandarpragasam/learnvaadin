@@ -13,10 +13,6 @@ zuul:
       path: /**
       serviceId: website-application
       sensitiveHeaders:
-    news-application:
-      path: /news/**
-      serviceId: news-application
-      sensitiveHeaders:
     admin-application:
       path: /admin/**
       serviceId: admin-application
