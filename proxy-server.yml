@@ -26,11 +26,4 @@ website-application.ribbon.NFLoadBalancerRuleClassName: com.example.StickySessio
 admin-application.ribbon.NFLoadBalancerRuleClassName: com.example.StickySessionRule
 news-application.ribbon.NFLoadBalancerRuleClassName: com.example.StickySessionRule
 
-# Increase the Hystrix timeout to 60s (globally)
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 60000
+
