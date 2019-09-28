@@ -2,14 +2,11 @@ management.endpoints.web.exposure.include: "*"
 
 spring:
   jpa:
-    properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
-    properties.hibernate.jdbc.lob.non_contextual_creation: true
     hibernate.ddl-auto: none
-    hibernate.show-sql: true
-    database-platform: postgres
+    database-platform: org.hibernate.dialect.H2Dialect
   datasource:
-    driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/postgres
-    username: postgres
-    password: postgress
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:file:~/h2-databases/vaadin-microservices-demo-db;AUTO_SERVER=TRUE;DB_CLOSE_ON_EXIT=FALSE
+    username: username
+    password: password
 
