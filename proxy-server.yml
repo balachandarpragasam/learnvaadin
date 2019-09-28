@@ -2,7 +2,7 @@ management.endpoints.web.exposure.include: "*"
 
 ribbon:
   serverListRefreshInterval: 1000
-  ConnectTimeout: 30000
+  ConnectTimeout: 3000
   ReadTimeout: 60000
   SocketTimeout: 30000
 
